@@ -32,3 +32,16 @@ interface IF_CI extends IF_UNIT
 	 */
 	static public function Config() : IF_CI_Config;
 }
+
+/**	IF_CI_Config
+ *
+ * @created    2024-11-24
+ * @version    1.0
+ * @package    op-core
+ * @subpackage interface
+ * @author     Tomoaki Nagahara
+ * @copyright  Tomoaki Nagahara All right reserved.
+ */
+interface IF_CI_Config
+{
+}
