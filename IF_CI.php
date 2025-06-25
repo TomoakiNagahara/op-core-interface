@@ -54,5 +54,5 @@ interface IF_CI_Config
 	 *
 	 * @created    2024-11-24
 	 */
-	static public function Set();
+	public function Set($method, $result, $args);
 }
