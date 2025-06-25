@@ -23,6 +23,6 @@ namespace OP;
  * @author     Tomoaki Nagahara
  * @copyright  Tomoaki Nagahara All right reserved.
  */
-interface IF_CI
+interface IF_CI extends IF_UNIT
 {
 }
