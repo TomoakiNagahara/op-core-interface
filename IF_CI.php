@@ -48,7 +48,7 @@ interface IF_CI_Config
 	 *
 	 * @created    2024-11-24
 	 */
-	static public function Get();
+	public function Get();
 
 	/**	Set config
 	 *
