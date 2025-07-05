@@ -43,4 +43,23 @@ interface IF_LAYOUT extends IF_UNIT
 	 * @return     string     $layout_name
 	 */
 	static function Name( string $name=null ) : string;
+
+	/**	Set / Get layout execute flag.
+	 *
+	 * Set whether to apply a layout or not.
+	 * The returned value is the current flag.
+	 *
+	 * <pre>
+	 * //  Set
+	 * IF_LAYOUT::Execute(true);
+	 *
+	 * //  Get
+	 * $execute = IF_LAYOUT::Execute();
+	 * </pre>
+	 *
+	 * @created    2025-07-05
+	 * @param      bool       $execute
+	 * @return     bool
+	 */
+	static function Execute( bool $execute ) : bool;
 }
