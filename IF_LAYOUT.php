@@ -59,7 +59,7 @@ interface IF_LAYOUT extends IF_UNIT
 	 *
 	 * @created    2025-07-05
 	 * @param      bool       $execute
-	 * @return     bool
+	 * @return     bool       $current_value
 	 */
-	static function Execute( bool $execute ) : bool;
+	static function Execute( ?bool $execute=null ) : bool;
 }
