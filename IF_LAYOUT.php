@@ -40,9 +40,9 @@ interface IF_LAYOUT extends IF_UNIT
 	 *
 	 * @created    2025-07-05
 	 * @param      string     $layout_name
-	 * @return     string     $layout_name
+	 * @return     string     $current_layout_name
 	 */
-	static function Name( string $name=null ) : string;
+	static function Name( ?string $name=null ) : string;
 
 	/**	Set / Get layout execute flag.
 	 *
