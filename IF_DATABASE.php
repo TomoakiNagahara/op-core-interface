@@ -2,6 +2,9 @@
 /**	op-core:/interface/IF_DATABASE.php
  *
  * @created    2018-04-20
+ * @version    1.0
+ * @package    op-core
+ * @subpackage interface
  * @author     Tomoaki Nagahara
  * @copyright  Tomoaki Nagahara All right reserved.
  */
@@ -15,11 +18,6 @@ namespace OP;
 /**	IF_DATABASE
  *
  * @created    2018-04-20
- * @version    1.0
- * @package    op-core
- * @subpackage interface
- * @author     Tomoaki Nagahara
- * @copyright  Tomoaki Nagahara All right reserved.
  */
 interface IF_DATABASE
 {

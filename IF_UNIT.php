@@ -3,6 +3,9 @@
  *
  * @created    2019-02-20  op-core-7:/IF_UNIT.php
  * @moved      2025-06-25  op-core-interface:/IF_UNIT.php
+ * @version    1.0
+ * @package    op-core
+ * @subpackage interface
  * @author     Tomoaki Nagahara
  * @copyright  Tomoaki Nagahara All right reserved.
  */
@@ -16,11 +19,6 @@ namespace OP;
  *
  * @created    2019-02-20  op-core-7:/IF_UNIT.php
  * @moved      2025-06-25  op-core-interface:/IF_UNIT.php
- * @version    1.0
- * @package    op-core
- * @subpackage interface
- * @author     Tomoaki Nagahara
- * @copyright  Tomoaki Nagahara All right reserved.
  */
 interface IF_UNIT
 {

@@ -2,6 +2,9 @@
 /**	op-core-interface:/IF_QQL.php
  *
  * @created    2018-05-14
+ * @version    1.0
+ * @package    op-core
+ * @subpackage interface
  * @author     Tomoaki Nagahara
  * @copyright  Tomoaki Nagahara All right reserved.
  */
@@ -20,11 +23,6 @@ namespace OP;
 /**	IF_QQL
  *
  * @created    2018-05-14
- * @version    1.0
- * @package    op-core
- * @subpackage interface
- * @author     Tomoaki Nagahara
- * @copyright  Tomoaki Nagahara All right reserved.
  */
 interface IF_QQL
 {

@@ -2,6 +2,9 @@
 /**	op-core-interface:/IF_WEBPACK.php
  *
  * @created    2023-01-22
+ * @version    1.0
+ * @package    op-core
+ * @subpackage interface
  * @author     Tomoaki Nagahara
  * @copyright  Tomoaki Nagahara All right reserved.
  */
@@ -19,11 +22,6 @@ namespace OP;
 /**	IF_APP
  *
  * @created    2023-01-22
- * @version    1.0
- * @package    op-core
- * @subpackage interface
- * @author     Tomoaki Nagahara
- * @copyright  Tomoaki Nagahara All right reserved.
  */
 interface IF_WEBPACK
 {

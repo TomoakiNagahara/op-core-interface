@@ -2,6 +2,9 @@
 /**	op-core-interface:/IF_ROUTER.php
  *
  * @created    2024-06-12
+ * @version    1.0
+ * @package    op-core
+ * @subpackage interface
  * @author     Tomoaki Nagahara
  * @copyright  Tomoaki Nagahara All right reserved.
  */
@@ -14,11 +17,6 @@ namespace OP;
 /**	IF_ROUTER
  *
  * @created    2024-06-12
- * @version    1.0
- * @package    op-core
- * @subpackage interface
- * @author     Tomoaki Nagahara
- * @copyright  Tomoaki Nagahara All right reserved.
  */
 interface IF_ROUTER extends IF_UNIT
 {

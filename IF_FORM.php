@@ -2,8 +2,11 @@
 /**	op-core:/interface/IF_FORM.php
  *
  * @created   2018-04-20
- * @author    Tomoaki Nagahara
- * @copyright Tomoaki Nagahara All right reserved.
+ * @version    1.0
+ * @package    op-core
+ * @subpackage interface
+ * @author     Tomoaki Nagahara
+ * @copyright  Tomoaki Nagahara All right reserved.
  */
 
 /**	namespace
@@ -14,11 +17,6 @@ namespace OP;
 /**	IF_FORM
  *
  * @created    2018-04-20
- * @version    1.0
- * @package    op-core
- * @subpackage interface
- * @author     Tomoaki Nagahara
- * @copyright  Tomoaki Nagahara All right reserved.
  */
 interface IF_FORM
 {
