@@ -2,22 +2,25 @@
 /**	op-core-interface:/IF_ORM.php
  *
  * @created    2018-06-29
- * @version    1.0
+ * @porting    2025-11-30  from op-core-7:/interface/IF_ORM.php
  * @package    op-core
  * @subpackage interface
- * @author     Tomoaki Nagahara
- * @copyright  Tomoaki Nagahara All right reserved.
+ * @copyright  2018 Tomoaki Nagahara All Rights Reserved.
  */
 
-/**	namespace
+/**	Declare strict type
  *
- * @created    2024-06-12
+ */
+declare(strict_types=1);
+
+/**	Namespace
+ *
  */
 namespace OP;
 
 /**	IF_ORM
  *
- * @created    2018-06-29
+ * @created   2018-06-29
  */
 interface IF_ORM
 {
