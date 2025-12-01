@@ -44,7 +44,7 @@ interface IF_ORM extends IF_UNIT
 	 * @param    array       $conditions
 	 * @return  \OP\IF_ORM_RECORD
 	 */
-	public function Find($qql, $conditions);
+	public function Find( string $qql, array $conditions=[] ) : IF_ORM_RECORD ;
 
 	/**	Save array of record to database.
 	 *
