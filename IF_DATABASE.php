@@ -5,8 +5,7 @@
  * @version    1.0
  * @package    op-core
  * @subpackage interface
- * @author     Tomoaki Nagahara
- * @copyright  Tomoaki Nagahara All right reserved.
+ * @copyright  2018 Tomoaki Nagahara All Rights Reserved.
  */
 
 /**	namespace
