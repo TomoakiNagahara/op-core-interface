@@ -1,6 +1,19 @@
 <?php
 /**	op-core-interface:/IF_ORM.php
  *
+ * <pre>
+ * //  Get ORM's Record Object.
+ * $record = OP()->Unit()->ORM()->Find(' ai > 0 ');
+ * $record->Count(); // Return match record number.
+ *
+ * //  Change record value.
+ * $record->touch = true;
+ * $record->Save(); // Returns number is updated record number. False is failed.
+ *
+ * //  Display UI by form.
+ * $record->Form(); // Automatically validate and save.
+ * </pre>
+ *
  * @created    2018-06-29
  * @porting    2025-11-30  from op-core-7:/interface/IF_ORM.php
  * @package    op-core
