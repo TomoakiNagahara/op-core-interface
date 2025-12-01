@@ -35,7 +35,7 @@ namespace OP;
  *
  * @created   2018-06-29
  */
-interface IF_ORM
+interface IF_ORM extends IF_UNIT
 {
 	/**	Find record at QQL.
 	 *
