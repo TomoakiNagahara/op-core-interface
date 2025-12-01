@@ -62,6 +62,18 @@ interface IF_DATABASE
 	 */
 	public function Connect($config);
 
+	/**	Returns whether connected to a database.
+	 *
+	 * <pre>
+	 * $io = OP()->Unit()->Database()->isConnect('label');
+	 * </pre>
+	 *
+	 * @created    2025-12-01
+	 * @param      string     $label is connection label
+	 * @return     bool
+	 */
+	public function isConnect( string $label = 'default' ) : bool ;
+
 	/**	Count number of records at SELECT conditions.
 	 *
 	 * @created   2018-04-20
