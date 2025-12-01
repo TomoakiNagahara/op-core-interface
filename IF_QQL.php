@@ -24,7 +24,7 @@ namespace OP;
  *
  * @created    2018-05-14
  */
-interface IF_QQL
+interface IF_QQL extends IF_UNIT
 {
 	/**	Open database resource.
 	 *
