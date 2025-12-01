@@ -8,6 +8,11 @@
  * @copyright  2018 Tomoaki Nagahara All Rights Reserved.
  */
 
+/**	Declare strict type
+ *
+ */
+declare(strict_types=1);
+
 /**	namespace
  *
  * @created   2019-03-04
