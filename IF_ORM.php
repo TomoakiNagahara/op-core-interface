@@ -39,6 +39,17 @@ interface IF_ORM extends IF_UNIT
 {
 	/**	Find record at QQL.
 	 *
+	 * <pre>
+	 * //  Find target record.
+	 * $record = OP()->Unit()->ORM()->Find(' ai > 0 ', ['order timestamp desc', 'limit 10']);
+	 *
+	 * //  Change record value.
+	 * $record->changed = true;
+	 *
+	 * //  Save record to database.
+	 * OP()->Unit()->ORM()->Save($record);
+	 * </pre>
+	 *
 	 * @created  2018-06-29
 	 * @param    string      $QQL
 	 * @param    array       $conditions
