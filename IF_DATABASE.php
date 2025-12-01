@@ -98,13 +98,6 @@ interface IF_DATABASE
 	 */
 	public function Delete($config);
 
-	/**	Quote to SQL at each product.
-	 *
-	 * @created   2018-04-20
-	 * @param     array     $config
-	 */
-	public function Quote($config);
-
 	/**	Execute to SQL query string. And return records array.
 	 *
 	 * @created   2018-04-20
