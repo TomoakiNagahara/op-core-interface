@@ -51,5 +51,5 @@ interface IF_ORM extends IF_UNIT
 	 * @created  2018-06-29
 	 * @param   \OP\IF_ORM_RECORD
 	 */
-	public function Save($record);
+	public function Save( IF_ORM_RECORD & $record) ;
 }
