@@ -25,13 +25,21 @@ namespace OP;
  */
 interface IF_DATABASE
 {
-	/**	Return instanciated PDO by label.
+	/**	Returns the PDO instantiated by the label.
+	 *
+	 * <pre>
+	 * //  Connect using a config that only has access to the login table.
+	 * if( OP()->Unit()->Database()->Connect( $config, 'login' ) ){
+	 *     //  Manage multiple PDOs by the label.
+	 *     $pdo = OP()->Unit()->Database()->PDO('login');
+	 * }
+	 * </pre>
 	 *
 	 * @created    2018-04-20
 	 * @param      string     $label is connection label
 	 * @return    \PDO
 	 */
-	public function PDO( string $label = 'default' ) : \PDO ;
+	public static function PDO( string $label = 'default' ) : \PDO | bool | null ;
 
 	/**	Get configuration.
 	 *
