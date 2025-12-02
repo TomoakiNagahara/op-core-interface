@@ -25,16 +25,13 @@ namespace OP;
  */
 interface IF_DATABASE
 {
-	/**	Return PDO instance.
+	/**	Return instanciated PDO by label.
 	 *
-	 * <pre>
-	 * $db->PDO()->Query();
-	 * </pre>
-	 *
-	 * @created   2018-04-20
-	 * @return   \PDO
+	 * @created    2018-04-20
+	 * @param      string     $label is connection label
+	 * @return    \PDO
 	 */
-	public function PDO();
+	public function PDO( string $label = 'default' ) : \PDO ;
 
 	/**	Get configuration.
 	 *
