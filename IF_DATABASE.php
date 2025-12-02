@@ -59,11 +59,28 @@ interface IF_DATABASE
 
 	/**	Connect to database. And instantiate PDO.
 	 *
-	 * @created   2018-04-20
-	 * @param     array     $config
-	 * @return   \PDO
+	 * <pre>
+	 * //  Database connection config.
+	 * $config = [
+	 *     'driver'   => 'mysql',
+	 *     'host'     => '192.168.1.1',
+	 *     'port'     => '3306',
+	 *     'user'     => 'username',
+	 *     'password' => 'password',
+	 *     'database' => 'database',
+	 *     'charset'  => 'utf8',
+	 * ];
+	 *
+	 * //  Connect to the database.
+	 * $io = OP()->Unit()->Database()->Connect( $config, 'label' );
+	 * </pre>
+	 *
+	 * @created    2018-04-20
+	 * @param      array      $config
+	 * @param      string     $label is connection label
+	 * @return     bool
 	 */
-	public function Connect($config);
+	public function Connect( array $config, string $label = 'default' ) : bool ;
 
 	/**	Returns whether connected to a database.
 	 *
