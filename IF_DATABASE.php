@@ -41,23 +41,21 @@ interface IF_DATABASE
 	 */
 	public static function PDO( string $label = 'default' ) : \PDO | bool | null ;
 
-	/**	Get configuration.
+	/**	Returns the connection config by label.
 	 *
 	 * <pre>
-	 * //  Configuration.
-	 * $config = [];
-	 * $conifg['prod']     = 'mysql';
-	 * $conifg['host']     = 'localhost';
-	 * $conifg['port']     = '3306';
-	 * $conifg['user']     = 'username';
-	 * $conifg['password'] = 'password';
-	 * $conifg['charset']  = 'utf8';
+	 * //  Connect using a config that only has access to the login table.
+	 * if( OP()->Unit()->Database()->Connect( $config, 'login' ) ){
+	 *     //  Get connection config by the label.
+	 *     $config = OP()->Unit()->Database()->Config('login');
+	 * }
 	 * </pre>
 	 *
-	 * @addition 2018-11-13
-	 * @return	 array		 $config
+	 * @created    2018-11-13
+	 * @param      string     $label is connection label
+	 * @return	   array      $config
 	 */
-	public function Config();
+	public function Config( string $label = 'default' ) : array | null ;
 
 	/**	Connect to database. And instantiate PDO.
 	 *
