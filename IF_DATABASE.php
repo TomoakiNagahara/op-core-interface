@@ -94,13 +94,22 @@ interface IF_DATABASE
 	 */
 	public function isConnect( string $label = 'default' ) : bool ;
 
-	/**	Count number of records at SELECT conditions.
+	/**	Count the number of records that match.
+	 *
+	 * <pre>
+	 * $config = [
+	 *     'table' => 't_article',
+	 *     'limit' =>  -1,
+	 *     'where' => 'publish != NULL',
+	 * ];
+	 * $num = OP()->Unit()->Database()->Count( $config );
+	 * </pre>
 	 *
 	 * @created   2018-04-20
 	 * @param     array     $config
 	 * @return    integer   $count
 	 */
-	public function Count($config);
+	public function Count( array $config, string $label = 'default' );
 
 	/**	Execute SELECT SQL.
 	 *
