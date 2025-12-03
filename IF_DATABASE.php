@@ -181,4 +181,19 @@ interface IF_DATABASE
 	 * @param      string     $label
 	 */
 	public function Rollback( string $label = 'default' ) : bool ;
+
+	/**	Transaction is commit.
+	 *
+	 * <pre>
+	 * //  A transaction is valid for each PDO used in a connection.
+	 * if(!OP()->Unit()->Database()->Commit('DSN_LABEL') ){
+	 *     OP()->Error('Commit is failed.');
+	 *     return;
+	 * }
+	 * </pre>
+	 *
+	 * @created    2025-12-02
+	 * @param      string     $label
+	 */
+	public function Commit( string $label = 'default' ) : bool ;
 }
