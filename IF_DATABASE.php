@@ -166,4 +166,19 @@ interface IF_DATABASE
 	 * @param string $label
 	 */
 	public function Transaction( string $label = 'default' ) : bool ;
+
+	/**	Transaction is roll back.
+	 *
+	 * <pre>
+	 * //  A transaction is valid for each PDO used in a connection.
+	 * if(!OP()->Unit()->Database()->Rollback('DSN_LABEL') ){
+	 *     OP()->Error('Rollback is failed.');
+	 *     return;
+	 * }
+	 * </pre>
+	 *
+	 * @created    2025-12-02
+	 * @param      string     $label
+	 */
+	public function Rollback( string $label = 'default' ) : bool ;
 }
