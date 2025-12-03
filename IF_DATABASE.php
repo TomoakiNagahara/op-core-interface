@@ -190,10 +190,20 @@ interface IF_DATABASE
 
 	/**	Execute DELETE SQL.
 	 *
+	 * <pre>
+	 * //  Delete record.
+	 * $delete = [
+	 *     'table' => 'table_name',
+	 *     'where' => 'ai = 1', // required
+	 *     'limit' =>  1,       // required
+	 * ];
+	 * $number = OP()->Unit()->Database()->Delete( $delete );
+	 * </pre>
+	 *
 	 * @created   2018-04-20
 	 * @param     array     $config
 	 */
-	public function Delete($config);
+	public function Delete( array $config, string $label = 'default' );
 
 	/**	Execute to SQL query string. And return records array.
 	 *
