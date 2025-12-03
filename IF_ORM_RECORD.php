@@ -31,7 +31,7 @@ interface IF_ORM_RECORD
 	 *
 	 * @return  boolean  $io
 	 */
-	public function isFind();
+	public function isFound();
 
 	/**	Is this record values was valid by rule?
 	 *
