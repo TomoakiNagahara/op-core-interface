@@ -147,7 +147,9 @@ interface IF_DATABASE
 	 * </pre>
 	 *
 	 * @created   2018-04-20
-	 * @param     array     $config
+	 * @param     string       $qql
+	 * @param     string|array $option
+	 * @param     string       $label
 	 */
-	public function QQL(string $config, array $options);
+	public function QQL( string $qql, string|array $option='', string $label = 'default' );
 }
