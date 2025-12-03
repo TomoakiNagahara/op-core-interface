@@ -5,11 +5,15 @@
  * @version    1.0
  * @package    op-core
  * @subpackage interface
- * @author     Tomoaki Nagahara
- * @copyright  Tomoaki Nagahara All rights reserved.
+ * @copyright  2025 Tomoaki Nagahara All Rights Reserved.
  */
 
-/**	namespace
+/**	Declare strict type
+ *
+ */
+declare(strict_types=1);
+
+/**	Namespace
  *
  */
 namespace OP;
