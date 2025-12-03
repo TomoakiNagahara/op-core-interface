@@ -170,10 +170,23 @@ interface IF_DATABASE
 
 	/**	Execute UPDATE SQL.
 	 *
+	 * <pre>
+	 * //  Update records.
+	 * $update = [
+	 *     'table' => 'table_name',
+	 *     'where' => 'ai = 1', // required
+	 *     'limit' =>  1,       // required
+	 *     'set' => [
+	 *         'deleted' => OP()->Timestamp(),
+	 *     ],
+	 * ];
+	 * $number = OP()->Unit()->Database()->Update( $update );
+	 * </pre>
+	 *
 	 * @created   2018-04-20
 	 * @param     array     $config
 	 */
-	public function Update($config);
+	public function Update( array $config, string $label = 'default' );
 
 	/**	Execute DELETE SQL.
 	 *
