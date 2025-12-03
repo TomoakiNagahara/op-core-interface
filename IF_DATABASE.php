@@ -113,10 +113,41 @@ interface IF_DATABASE
 
 	/**	Execute SELECT SQL.
 	 *
+	 * <pre>
+	 * //  Select a single record.
+	 * $select = [
+	 *     'table' => 'table_name',
+	 *     'where' => 'ai = 1',
+	 *     'limit' =>  1,
+	 * ];
+	 * $record = OP()->Unit()->Database()->Select( $select );
+	 *
+	 * //  Select multiple records.
+	 * $select = [
+	 *     'table' => 'table_name',
+	 *     'where' => 'ai > 0',
+	 *     'limit' =>  -1, // -1 is unlimited
+	 * ];
+	 * $record = OP()->Unit()->Database()->Select( $select );
+	 *
+	 * //  Select record by multiple where conditions.
+	 * $select = [
+	 *     'table' => 'article',
+	 *     'limit' =>  10,
+	 *     'offset'=>   1,
+	 *     'where' => [
+	 *         'ai >= 1',
+	 *         'category = IT',
+	 *         'deleted != NULL',
+	 *     ],
+	 * ];
+	 * $record = OP()->Unit()->Database()->Select( $select );
+	 * </pre>
+	 *
 	 * @created   2018-04-20
 	 * @param     array     $config
 	 */
-	public function Select($config);
+	public function Select( array $config, string $label = 'default' );
 
 	/**	Execute INSERT SQL.
 	 *
