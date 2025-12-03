@@ -152,4 +152,18 @@ interface IF_DATABASE
 	 * @param     string       $label
 	 */
 	public function QQL( string $qql, string|array $option='', string $label = 'default' );
+
+	/**	Transaction is start.
+	 *
+	 * <pre>
+	 * //  A transaction is valid for each PDO used in a connection.
+	 * if(!OP()->Unit()->Database()->Transaction('DSN_LABEL') ){
+	 *     return;
+	 * }
+	 * </pre>
+	 *
+	 * @created    2025-12-02
+	 * @param string $label
+	 */
+	public function Transaction( string $label = 'default' ) : bool ;
 }
