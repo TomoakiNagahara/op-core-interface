@@ -137,7 +137,7 @@ interface IF_DATABASE
 	 * @param     string    $type
 	 * @return    array     $record
 	 */
-	public function SQL(string $SQL, string $type);
+	public function SQL( string $SQL, string $type, string $label = 'default' );
 
 	/**	Execute Quick Query Language string.
 	 *
