@@ -151,10 +151,22 @@ interface IF_DATABASE
 
 	/**	Execute INSERT SQL.
 	 *
+	 * <pre>
+	 * //  Insert record.
+	 * $insert = [
+	 *     'table' => 'table_name',
+	 *     'set' = [
+	 *          'number' =>  1,
+	 *          'string' => 'string',
+	 *     ];
+	 * ];
+	 * $ai = OP()->Unit()->Database()->Insert( $insert ); // Return Auto Increment ID
+	 * </pre>
+	 *
 	 * @created   2018-04-20
 	 * @param     array     $config
 	 */
-	public function Insert($config);
+	public function Insert( array $config, string $label = 'default' );
 
 	/**	Execute UPDATE SQL.
 	 *
