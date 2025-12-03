@@ -141,6 +141,11 @@ interface IF_DATABASE
 
 	/**	Execute Quick Query Language string.
 	 *
+	 * <pre>
+	 * //  Select article with pagination at public grant.
+	 * $records = OP()->Unit()->Database()->QQL(' t_article.ai > 0 ', 'limit = 10, order = timestamp, offset = 1', 'public'); // public is select only
+	 * </pre>
+	 *
 	 * @created   2018-04-20
 	 * @param     array     $config
 	 */
