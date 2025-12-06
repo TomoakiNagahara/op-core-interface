@@ -2,11 +2,10 @@
 /**	op-core-interface:/IF_CD.php
  *
  * @created    2025-07-05
- * @version    1.0
+ * @license    Apache-2.0
  * @package    op-core
  * @subpackage interface
- * @author     Tomoaki Nagahara
- * @copyright  Tomoaki Nagahara All right reserved.
+ * @copyright  (C) 2025 Tomoaki Nagahara
  */
 
 /**	namespace

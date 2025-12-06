@@ -2,10 +2,10 @@
 /**	op-core:/interface/IF_DATABASE.php
  *
  * @created    2018-04-20
- * @version    1.0
+ * @license    Apache-2.0
  * @package    op-core
  * @subpackage interface
- * @copyright  2018 Tomoaki Nagahara All Rights Reserved.
+ * @copyright  (C) 2018 Tomoaki Nagahara
  */
 
 /**	Declare strict type

@@ -1,12 +1,11 @@
 <?php
 /**	op-core:/interface/IF_FORM.php
  *
- * @created   2018-04-20
- * @version    1.0
+ * @created    2018-04-20
+ * @license    Apache-2.0
  * @package    op-core
  * @subpackage interface
- * @author     Tomoaki Nagahara
- * @copyright  Tomoaki Nagahara All right reserved.
+ * @copyright  (C) 2018 Tomoaki Nagahara
  */
 
 /**	namespace

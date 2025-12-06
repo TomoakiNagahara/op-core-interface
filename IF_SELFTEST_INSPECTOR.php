@@ -2,10 +2,10 @@
 /**	op-core-interface:/IF_SELFTEST_INSPECTOR.php
  *
  * @created    2025-12-03
- * @version    1.0
+ * @license    Apache-2.0
  * @package    op-core
  * @subpackage interface
- * @copyright  2025 Tomoaki Nagahara All Rights Reserved.
+ * @copyright  (C) 2025 Tomoaki Nagahara
  */
 
 /**	Declare strict type

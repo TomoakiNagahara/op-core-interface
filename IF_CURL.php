@@ -3,11 +3,10 @@
  *
  * @created    2024-06-22  op-core-edge
  * @moved      2025-11-26  op-core-interface
- * @version    1.0
+ * @license    Apache-2.0
  * @package    op-core
  * @subpackage interface
- * @author     Tomoaki Nagahara
- * @copyright  Tomoaki Nagahara All rights reserved.
+ * @copyright  (C) 2024 Tomoaki Nagahara
  */
 
 /**	Declare strict type

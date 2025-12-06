@@ -16,9 +16,10 @@
  *
  * @created    2018-06-29
  * @porting    2025-11-30  from op-core-7:/interface/IF_ORM.php
+ * @license    Apache-2.0
  * @package    op-core
  * @subpackage interface
- * @copyright  2018 Tomoaki Nagahara All Rights Reserved.
+ * @copyright  (C) 2018 Tomoaki Nagahara
  */
 
 /**	Declare strict type

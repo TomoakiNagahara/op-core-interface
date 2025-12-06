@@ -2,11 +2,10 @@
 /**	op-core-interface:/IF_CI.php
  *
  * @created    2024-11-24
- * @version    1.0
+ * @license    Apache-2.0
  * @package    op-core
  * @subpackage interface
- * @author     Tomoaki Nagahara
- * @copyright  Tomoaki Nagahara All right reserved.
+ * @copyright  (C) 2024 Tomoaki Nagahara
  */
 
 /**	namespace
