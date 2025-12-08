@@ -29,31 +29,34 @@ interface IF_SQL_DDL_SHOW
 	 * @created   2019-01-08
 	 * @param     IF_DATABASE $_DB
 	 */
-	public function __construct(IF_DATABASE & $_DB);
+	public function __construct( IF_DATABASE & $_DB );
 
 	/**	Generate Show Database SQL.
 	 *
 	 * @created   2019-01-08
-	 * @param     array      $config
-	 * @return    string     $sql
+	 * @param     string     $label
+	 * @return    string
 	 */
-	public function Database(array $config);
+	public function Database( string $label='default' ) : string ;
 
 	/**	Generate Show Table SQL.
 	 *
 	 * @created   2019-01-08
-	 * @param     array      $config
-	 * @return    string     $sql
+	 * @param     string     $label
+	 * @param     string     $database
+	 * @return    string
 	 */
-	public function Table(array $config);
+	public function Table( string $database='', string $label='default' ) : string ;
 
 	/**	Generate Show Column SQL.
 	 *
 	 * @created   2019-01-08
-	 * @param     array      $config
-	 * @return    string     $sql
+	 * @param     string     $label
+	 * @param     string     $table
+	 * @param     string     $database
+	 * @return    string
 	 */
-	public function Column(array $config);
+	public function Column( string $table='', string $database='', string $label='default' ) : string ;
 
 	/**	Generate Show Index SQL.
 	 *
