@@ -25,6 +25,13 @@ interface IF_CI extends IF_UNIT
 	 * @return     IF_CI_Config
 	 */
 	static public function Config() : IF_CI_Config;
+
+	/**	Check if a github action environment.
+	 *
+	 * @created    2026-01-11
+	 * @return     bool
+	 */
+	static public function isGitHubActions() : bool ;
 }
 
 /**	IF_CI_Config
