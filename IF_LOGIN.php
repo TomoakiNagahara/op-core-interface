@@ -45,4 +45,11 @@ interface IF_LOGIN extends IF_UNIT
 	 * @return     bool
 	 */
 	static function isLoggedin() : ?bool;
+
+	/**	Returns an auto-increment ID.
+	 *
+	 * @created    2026-02-05
+	 * @return     int|false
+	 */
+	static function AI() : int | false ;
 }
