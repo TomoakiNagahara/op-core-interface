@@ -136,9 +136,9 @@ interface IF_QQL extends IF_UNIT
 	 * @param      string     $qql
 	 * @param      array      $where
 	 * @param      array      $option
-	 * @return     array      $record
+	 * @param      int        $limit
 	 */
-	static public function Get(string $qql, array $where=[], array $option=[]);
+	static public function Get(string $qql, array $where=[], array $option=[], int $limit=1);
 
 	/**	Return error.
 	 *
