@@ -29,4 +29,11 @@ interface IF_BITCOIN extends IF_UNIT
 	 * @return     IF_BITCOIN_WALLET
 	 */
 	public static function Wallet() : IF_BITCOIN_WALLET ;
+
+	/**	Return the Bitcoin Address interface.
+	 *
+	 * @created    2026-01-26
+	 * @return     IF_BITCOIN_ADDRESS
+	 */
+	public static function Address() : IF_BITCOIN_ADDRESS ;
 }
