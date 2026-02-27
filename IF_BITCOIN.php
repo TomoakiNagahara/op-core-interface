@@ -23,4 +23,10 @@ namespace OP;
  */
 interface IF_BITCOIN extends IF_UNIT
 {
+	/**	Return wallet interface.
+	 *
+	 * @created    2026-01-19
+	 * @return     IF_BITCOIN_WALLET
+	 */
+	public static function Wallet() : IF_BITCOIN_WALLET ;
 }
