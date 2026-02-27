@@ -30,4 +30,12 @@ interface IF_BITCOIN_WALLET extends IF_UNIT
 	 * @return     bool
 	 */
 	public static function Create( string $name, ?string $passphrase=null ) : bool ;
+
+	/**	Load the Wallet.
+	 *
+	 * @created    2026-01-25
+	 * @param      string     $name of wallet
+	 * @return     bool
+	 */
+	public static function Load( string $name ) : bool ;
 }
