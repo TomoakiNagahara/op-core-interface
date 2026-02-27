@@ -28,10 +28,10 @@ interface IF_QQL extends IF_UNIT
 	/**	Open database resource.
 	 *
 	 * @created    2024-07-13
-	 * @param      string     $dsn
-	 * @return     string     $label
+	 * @param      string|array $dsn
+	 * @return     string       $label
 	 */
-	static public function Open(string $dsn='') : string;
+	static public function Open(string $dsn='') : string | false ;
 
 	/**	Open database resource.
 	 *
