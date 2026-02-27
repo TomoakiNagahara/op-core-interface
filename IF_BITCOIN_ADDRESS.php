@@ -23,4 +23,12 @@ namespace OP;
  */
 interface IF_BITCOIN_ADDRESS extends IF_UNIT
 {
+	/**	Get the Bitcoin address for each wallet.
+	 *
+	 * @created    2026-03-09
+	 * @param      string     $wallet
+	 * @param      string     $label
+	 * @return     string|false
+	 */
+	public static function Get( string $wallet, string $label ) : string | false ;
 }
