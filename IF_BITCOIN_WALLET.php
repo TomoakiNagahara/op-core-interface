@@ -38,4 +38,12 @@ interface IF_BITCOIN_WALLET extends IF_UNIT
 	 * @return     bool
 	 */
 	public static function Load( string $name ) : bool ;
+
+	/**	Get the Balance in the Wallet.
+	 *
+	 * @created    2026-01-19
+	 * @param      string     $name of wallet
+	 * @return     float
+	 */
+	public static function Balance( string $name ) : float | false ;
 }
