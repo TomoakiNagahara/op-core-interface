@@ -36,4 +36,11 @@ interface IF_BITCOIN extends IF_UNIT
 	 * @return     IF_BITCOIN_ADDRESS
 	 */
 	public static function Address() : IF_BITCOIN_ADDRESS ;
+
+	/**	Return the Transaction ID.
+	 *
+	 * @created    2026-02-01
+	 * @return     string
+	 */
+	public static function Send( string $wallet, string $address, string $amount, ?string $passphrase=null ) : string | false ;
 }
