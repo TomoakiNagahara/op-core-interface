@@ -37,7 +37,7 @@ interface IF_LOGIN extends IF_UNIT
 	/**	Log out
 	 *
 	 */
-	static function SignOut();
+	static function SignOut() : bool ;
 
 	/**	Returns whether user are logged in.
 	 *
