@@ -32,7 +32,7 @@ interface IF_LOGIN extends IF_UNIT
 	/**	Log in
 	 *
 	 */
-	static function SignIn();
+	static function SignIn( string $account, string $password ) : bool ;
 
 	/**	Log out
 	 *
