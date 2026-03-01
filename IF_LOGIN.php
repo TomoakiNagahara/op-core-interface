@@ -44,7 +44,7 @@ interface IF_LOGIN extends IF_UNIT
 	 * @created    2026-01-17
 	 * @return     bool
 	 */
-	static function isLoggedin() : ?bool;
+	static function isLoggedin() : bool;
 
 	/**	Returns an auto-increment ID.
 	 *
