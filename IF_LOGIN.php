@@ -27,7 +27,7 @@ interface IF_LOGIN extends IF_UNIT
 	/**	Register account
 	 *
 	 */
-	static function SignUp();
+	static function SignUp( string $account, string $password ) : bool ;
 
 	/**	Log in
 	 *
